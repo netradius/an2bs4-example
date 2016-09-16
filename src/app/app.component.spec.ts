@@ -1,13 +1,10 @@
 import {
-    it,
-    inject,
-    describe,
-    beforeEachProviders,
-    expect
+    inject
 } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+
 describe('App', () => {
-    beforeEachProviders(() => [
+    beforeEach(() => [
         AppComponent
     ]);
     it ('should work', inject([AppComponent], (app: AppComponent) => {
